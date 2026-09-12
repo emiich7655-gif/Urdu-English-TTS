@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Urdu English TTS"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#172B4D"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zabaan / Language"
+            android:textSize="16sp"
+            android:labelFor="@+id/languageSpinner" />
+
+        <Spinner
+            android:id="@id/languageSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/textInput"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:gravity="top|start"
+            android:hint="Apna Urdu ya English text yahan paste karein"
+            android:inputType="textMultiLine|textCapSentences"
+            android:textDirection="firstStrong"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Play / Sunein"
+            android:textAllCaps="false"
+            android:enabled="false" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop / Rokein"
+            android:textAllCaps="false"
+            android:enabled="false" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save MP3"
+            android:textAllCaps="false"
+            android:enabled="false" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Awaaz ka engine tayyar ho raha hai..."
+            android:textSize="15sp"
+            android:textColor="#37474F"
+            android:accessibilityLiveRegion="polite" />
+
+    </LinearLayout>
+</ScrollView>
